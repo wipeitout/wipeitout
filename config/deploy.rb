@@ -3,7 +3,7 @@ default_run_options[:pty] = true
 
 # be sure to change these
 set :user, 'wipeitout'
-set :domain, 'localhost'
+set :domain, 'github.com'
 set :application, 'wipeitout'
 
 # the rest should be good
