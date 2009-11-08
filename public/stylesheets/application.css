@@ -1,0 +1,177 @@
+body {
+    background: white url(../images/background_bg_with_trees_logo_bigger.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#main {
+    width: 1050px;
+    margin: 0 auto;
+    z-index: 1000;
+    overflow-x: hidden;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    padding-top: 100px;
+}
+
+.centre {
+    background-color: white;
+}
+
+#content {
+    padding: 50px 30px 30px 30px;
+    height: 100%;
+}
+
+.words {
+    padding: 50px 20px 20px 20px
+}
+
+.important {
+    color: #85C7ED;
+    background-color: black;
+    font-size: larger;
+
+}
+
+p.important {
+    font-weight: bold;
+    font-size: large;
+    color: #91BC3D;
+}
+
+p.important_blue {
+    font-weight: bold;
+    font-size: large;
+    color: #85C7ED;
+}
+
+.onboard {
+    padding: 50px 30px 50px 30px;
+}
+
+.whattobuy {
+    padding: 50px 30px 50px 30px;
+}
+
+.onboard ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 10px;
+    position: relative;
+}
+
+ul.bulleted_list {
+    list-style-image: url('../images/toolbar/bullet_ie.gif');
+    margin-left: 0;
+    padding-top: 1px;
+    padding-left: 3em;
+}
+
+#navigation {
+    width: 100%;
+    background: black;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 8px 12px 8px 12px;
+    line-height: 30px;
+}
+
+#vimeo {
+    padding-bottom: 30px;
+    height: 350px
+}
+
+.vimeo_panel {
+    float: left;
+}
+
+#embedded_video {
+    padding-right: 60px;
+}
+
+#commitment_counter {
+    background-color: white;
+    height: 330px;
+    width: 405px;
+}
+
+#commitment_counter p {
+    font-size: large;
+}
+
+#poms {
+    background-color: white;
+    height: 150px;
+    width: 400px;
+}
+
+#supporter {
+    background-color: black;
+    height: 400px;
+    color: white;
+}
+
+.supporter_form {
+    float: left;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+#pledges {
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px
+
+}
+
+.whattobuy img {
+    padding-right: 50px;
+
+}
+
+.table-row {
+    padding-top: 100px;
+    padding-bottom: 10px
+}
+
+#navigation ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navigation ul li {
+    display: inline;
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    position: relative;
+}
+
+#navigation li a {
+    color: #91BC3D;
+    display: block;
+    float: left;
+    margin: 0;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+#navigation li a:hover {
+    color: #85C7ED;
+}
+
+label.error {
+/* Move the error above the input element. */
+    /*position: absolute;*/
+    margin-top: -1.5em;
+
+    color: red;
+    padding-left: 100px;
+    font-size: 12px;
+
+}

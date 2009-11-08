@@ -1,0 +1,186 @@
+<!-- Use the Google AJAX Libraries API:
+http://code.google.com/apis/ajaxlibs/ -->
+<script src="http://www.google.com/jsapi"></script>
+<script>
+    google.load("swfobject", "2.1");
+</script>
+<style type="text/css">
+
+    body {
+        font-family: verdana, helvetica;
+        background-color: white;
+    }
+
+    #timedisplay {
+        border: solid 1px red;
+        width: 50px;
+    }
+</style>
+<script type="text/javascript">
+
+    function updateHTML(elmId, value) {
+        document.getElementById(elmId).innerHTML = value;
+    }
+
+    function setytplayerState(newState) {
+        updateHTML("playerstate", newState);
+    }
+
+    function onYouTubePlayerReady(playerId) {
+        ytplayer = document.getElementById("myytplayer");
+        setInterval(updateytplayerInfo, 250);
+        updateytplayerInfo();
+        ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
+        ytplayer.addEventListener("onError", "onPlayerError");
+    }
+
+    function onPlayerError(errorCode) {
+        alert("An error occured: " + errorCode);
+    }
+
+    function onytplayerStateChange(newState) {
+        setytplayerState(newState);
+    }
+
+    function updateytplayerInfo() {
+        updateHTML("bytesloaded", getBytesLoaded());
+        updateHTML("bytestotal", getBytesTotal());
+        updateHTML("videoduration", getDuration());
+        updateHTML("videotime", getCurrentTime());
+        updateHTML("startbytes", getStartBytes());
+        updateHTML("volume", getVolume());
+    }
+
+    // functions for the api calls
+    function loadNewVideo(id, startSeconds) {
+        if (ytplayer) {
+            ytplayer.loadVideoById(id, parseInt(startSeconds));
+        }
+    }
+
+    function cueNewVideo(id, startSeconds) {
+        if (ytplayer) {
+            ytplayer.cueVideoById(id, startSeconds);
+        }
+    }
+
+    function play() {
+        if (ytplayer) {
+            ytplayer.playVideo();
+        }
+    }
+
+    function pause() {
+        if (ytplayer) {
+            ytplayer.pauseVideo();
+        }
+    }
+
+    function stop() {
+        if (ytplayer) {
+            ytplayer.stopVideo();
+        }
+    }
+
+    function getPlayerState() {
+        if (ytplayer) {
+            return ytplayer.getPlayerState();
+        }
+    }
+
+    function seekTo(seconds) {
+        if (ytplayer) {
+            ytplayer.seekTo(seconds, true);
+        }
+    }
+
+    function getBytesLoaded() {
+        if (ytplayer) {
+            return ytplayer.getVideoBytesLoaded();
+        }
+    }
+
+    function getBytesTotal() {
+        if (ytplayer) {
+            return ytplayer.getVideoBytesTotal();
+        }
+    }
+
+    function getCurrentTime() {
+        if (ytplayer) {
+            return ytplayer.getCurrentTime();
+        }
+    }
+
+    function getDuration() {
+        if (ytplayer) {
+            return ytplayer.getDuration();
+        }
+    }
+
+    function getStartBytes() {
+        if (ytplayer) {
+            return ytplayer.getVideoStartBytes();
+        }
+    }
+
+    function mute() {
+        if (ytplayer) {
+            ytplayer.mute();
+        }
+    }
+
+    function unMute() {
+        if (ytplayer) {
+            ytplayer.unMute();
+        }
+    }
+
+    function getEmbedCode() {
+        alert(ytplayer.getVideoEmbedCode());
+    }
+
+    function getVideoUrl() {
+        alert(ytplayer.getVideoUrl());
+    }
+
+    function setVolume(newVolume) {
+        if (ytplayer) {
+            ytplayer.setVolume(newVolume);
+        }
+    }
+
+    function getVolume() {
+        if (ytplayer) {
+            return ytplayer.getVolume();
+        }
+    }
+
+    function clearVideo() {
+        if (ytplayer) {
+            ytplayer.clearVideo();
+        }
+    }
+
+
+</script>
+<div>
+  <!-- embed the player -->
+  <div id="ytapiplayer">
+    You need Flash player 8+ and JavaScript enabled to view this video.
+  </div>
+  <script type="text/javascript">
+      // <![CDATA[
+
+      // allowScriptAccess must be set to allow the Javascript from one
+      // domain to access the swf on the youtube domain
+      var params = { allowScriptAccess: "always", bgcolor: "#cccccc" };
+      // this sets the id of the object or embed tag to 'myytplayer'.
+      // You then use this id to access the swf and make calls to the player's API
+      var atts = { id: "myytplayer" };
+      swfobject.embedSWF("http://www.youtube.com/v/IR05RPtt6YU?border=0&amp;enablejsapi=1&amp;playerapiid=ytplayer",
+              "ytapiplayer", "504", "340", "8", null, null, params, atts);
+      //]]>
+  </script>
+
+</div>
