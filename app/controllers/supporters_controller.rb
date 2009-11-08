@@ -11,6 +11,8 @@ class SupportersController < ApplicationController
     #add each pledge to commitment table for the supporter
     create_commitments(pledges, supporter)
 
+    @supporter_count = Supporter.all.count
+
     respond_to do |format|
       format.js { render :layout => false }
     end
