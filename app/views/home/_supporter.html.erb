@@ -1,4 +1,4 @@
-<a name="pledge" />
+<a name="pledge"/>
 
 <% form_for :supporter, :html => {:id => 'new_supporter' }, :url => { :controller => "supporters", :action => "create" } do |f| %>
 
@@ -13,14 +13,15 @@
 
       <p>
         <%= f.check_box :by_2014 %>
-        <%= f.label "By 2014: I pledge my support for my supermarket and workplace to phase out non-recycled toilet paper by 2014. I’m happy to get softness and affordability, but it needs to be recycled." %><br/>
+        <%= f.label "By 2014: I pledge my support for my supermarket and workplace to phase out non-recycled toilet paper by 2014. I’m happy to get softness and affordability, but it needs to be recycled." %>
+        <br/>
       </p>
 
     </div>
     <div id="supporter_details" class="supporter_form">
       <p>
         <%= f.label :name %> <br/>
-        <%= f.text_field :name, :class => "required"%>
+        <%= f.text_field :name, :class => "required" %>
       </p>
 
       <p>
@@ -35,11 +36,11 @@
 
       <p>
         <%= f.check_box :accept_more_info %>
-        <%= f.label :accept_more_info %><br/>
+        <%= f.label :accept_more_info, "Click here to keep up to date with the campaign", :class => "supporter_accept_more" %>
+        <br/>
       </p>
 
-      <%= image_submit_tag('submit_button.png') %>
+      <%= image_submit_tag('submit_button_new.png') %>
 
     </div>
-
 <% end %>

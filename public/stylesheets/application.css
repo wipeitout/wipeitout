@@ -5,13 +5,13 @@ body {
 }
 
 #main {
-    width: 1050px;
+    width: 1070px;
     margin: 0 auto;
     z-index: 1000;
     overflow-x: hidden;
     font-family: arial, sans-serif;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
     position: relative;
     padding-top: 100px;
 }
@@ -29,7 +29,7 @@ body {
     padding: 50px 20px 20px 20px
 }
 
-.important {
+.commitment_count {
     color: #85C7ED;
     background-color: black;
     font-size: larger;
@@ -38,14 +38,25 @@ body {
 
 p.important {
     font-weight: bold;
-    font-size: large;
-    color: #91BC3D;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 p.important_blue {
     font-weight: bold;
     font-size: large;
     color: #85C7ED;
+}
+
+.supporter_accept_more {
+    font-size: 12px;
+}
+
+#social_networking h2 {
+    padding-top: 35px;
+}
+#social_networking p {
+    padding-right: 40px;
 }
 
 .onboard {
@@ -92,15 +103,15 @@ ul.bulleted_list {
 #embedded_video {
     padding-right: 60px;
 }
-
 #commitment_counter {
     background-color: white;
     height: 330px;
     width: 405px;
 }
 
-#commitment_counter p {
-    font-size: large;
+#supporter_count {
+    font-size: 30px;
+    line-height: 40px;
 }
 
 #poms {
@@ -109,9 +120,13 @@ ul.bulleted_list {
     width: 400px;
 }
 
+#content img {
+    padding-top: 20px;
+}
+
 #supporter {
     background-color: black;
-    height: 400px;
+    height: 360px;
     color: white;
 }
 
@@ -145,6 +160,8 @@ ul.bulleted_list {
 }
 
 #navigation ul li {
+    font-size: 18px;
+    line-height: 30px;
     display: inline;
     float: left;
     list-style: none;
