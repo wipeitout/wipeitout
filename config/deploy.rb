@@ -2,9 +2,9 @@
 default_run_options[:pty] = true
 
 # be sure to change these
-set :user, 'username'
-set :domain, 'yourdomain.com'
-set :application, 'yourapp'
+set :user, 'wipeitout'
+set :domain, 'localhost'
+set :application, 'wipeitout'
 
 # the rest should be good
 set :repository,  "#{user}@#{domain}:git/#{application}.git"
