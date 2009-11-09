@@ -16,11 +16,3 @@ test:
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
-
-production:
-  adapter: mysql
-  encoding: utf8
-  database: wipeitout_production
-  username: wipeitout_db
-  password: 0ut1tw1p3
-  host: mysql.wipeitout.com.au
