@@ -11,12 +11,20 @@ class SupportersController < ApplicationController
     #add each pledge to commitment table for the supporter
     create_commitments(pledges, supporter)
 
-    @supporter_count = Supporter.all.count
+    @supporters = Supporter.find(:all)
 
     respond_to do |format|
       format.js { render :layout => false }
     end
 
+  end
+
+  def create_commitments(pledges, supporter)
+    pledges.each do |p|
+      Commitment.create(:pledge_id => p.id) do |c|
+        c.supporter_id = supporter.id
+      end
+    end
   end
 
   def extract_pledges(posted_supporter)
@@ -34,14 +42,6 @@ class SupportersController < ApplicationController
     posted_supporter.delete :by_2014
 
     return pledges
-  end
-
-  def create_commitments(pledges, supporter)
-    pledges.each do |p|
-      Commitment.create(:pledge_id => p.id) do |c|
-        c.supporter_id = supporter.id
-      end
-    end
   end
 
 end

@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @supporter_count = Supporter.all.count
+    @supporters = Supporter.find(:all)
   end
 
 end

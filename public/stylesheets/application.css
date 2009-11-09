@@ -55,6 +55,7 @@ p.important_blue {
 #social_networking h2 {
     padding-top: 35px;
 }
+
 #social_networking p {
     padding-right: 40px;
 }
@@ -92,7 +93,6 @@ ul.bulleted_list {
 }
 
 #vimeo {
-    padding-bottom: 30px;
     height: 350px
 }
 
@@ -103,6 +103,7 @@ ul.bulleted_list {
 #embedded_video {
     padding-right: 60px;
 }
+
 #commitment_counter {
     background-color: white;
     height: 330px;
@@ -146,7 +147,6 @@ ul.bulleted_list {
 
 .whattobuy img {
     padding-right: 50px;
-
 }
 
 .table-row {
@@ -183,12 +183,30 @@ ul.bulleted_list {
 }
 
 label.error {
-/* Move the error above the input element. */
-    /*position: absolute;*/
     margin-top: -1.5em;
 
     color: red;
     padding-left: 100px;
     font-size: 12px;
 
+}
+
+a:link {
+    color: #85C7ED;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #85C7ED;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #91BC3D;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #85C7ED;
+    text-decoration: none;
 }
