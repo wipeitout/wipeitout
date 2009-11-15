@@ -5,15 +5,14 @@ body {
 }
 
 #main {
-    width: 1070px;
-    margin: 0 auto;
-    z-index: 1000;
+    width: 1000px;
+    margin: 0 auto; /*z-index: 1000;*/
     overflow-x: hidden;
     font-family: arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     position: relative;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 .centre {
@@ -52,16 +51,16 @@ p.important_blue {
     font-size: 12px;
 }
 
-#social_networking h2 {
+#signup_thanks h2 {
     padding-top: 35px;
 }
 
-#social_networking p {
+#signup_thanks p {
     padding-right: 40px;
 }
 
 .onboard {
-    padding: 50px 30px 50px 30px;
+    padding: 0px 60px;
 }
 
 .whattobuy {
@@ -93,7 +92,9 @@ ul.bulleted_list {
 }
 
 #vimeo {
-    height: 350px
+    height: 370px;
+    padding-top: 30px; /*  new gm*/
+
 }
 
 .vimeo_panel {
@@ -101,18 +102,29 @@ ul.bulleted_list {
 }
 
 #embedded_video {
-    padding-right: 60px;
+/*gm   padding-right: 60px;*/
 }
 
-#commitment_counter {
+#vimeo_right_words {
     background-color: white;
-    height: 330px;
-    width: 405px;
+    height: 330px; /*width: 505px; *//* 405 gm */
+    width: 425px; /* 405 gm */
+}
+
+#vimeo_right_words p {
+    margin: 0;
+    padding-left: 20px;
+}
+
+#vimeo_right_words ul li {
+    line-height: 25px;
 }
 
 #supporter_count {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 40px;
+    padding-left: 50px;
+
 }
 
 #poms {
@@ -126,8 +138,8 @@ ul.bulleted_list {
 }
 
 #supporter {
-    background-color: black;
-    height: 360px;
+    background-color: black; /*height: 500px; with recaptch*/
+    height: 340px;
     color: white;
 }
 
@@ -139,10 +151,28 @@ ul.bulleted_list {
 
 #pledges {
     width: 50%;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px
 
+}
+
+#the_facts {
+    padding-top: 20px;
+}
+
+#facts_youtube {
+    margin-top: 10px;
+}
+
+#fact_top_words {
+    width: 450px;
+    padding-right: 20px;
+    margin: 0px;
+}
+
+.fact_top {
+    float: left;
 }
 
 .whattobuy img {
@@ -160,7 +190,7 @@ ul.bulleted_list {
 }
 
 #navigation ul li {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 30px;
     display: inline;
     float: left;
@@ -191,6 +221,19 @@ label.error {
 
 }
 
+#supporter_error {
+    margin-top: -1.5em;
+
+    color: red; /*padding-left: 100px;*/
+    font-size: 12px;
+
+}
+
+#notice {
+    color: red;
+    font-size: 12px;
+}
+
 a:link {
     color: #85C7ED;
     text-decoration: underline;
@@ -208,5 +251,126 @@ a:visited {
 
 a:hover {
     color: #85C7ED;
+    text-decoration: none;
+}
+
+#recaptcha_widget_div {
+    padding-bottom: 20px;
+}
+
+.supporter_input {
+    width: 310px;
+}
+
+#pledges h3 {
+    margin: 5px;
+}
+
+#pledges td {
+    padding-left: 20px;
+}
+
+#signup_thanks {
+    padding-left: 30px;
+}
+
+#socialnetworking {
+    clear: both; /*height: 29px;*/
+    height: 65px; /*margin-left: 490px;*/
+    margin: 30px;
+    padding-left: 120px;
+}
+
+#socialnetworking ul {
+    background-color: transparent !important;
+    display: block !important;
+    height: 65px !important;
+    text-indent: -9999px !important;
+}
+
+#socialnetworking ul li {
+    cursor: pointer !important;
+    display: inline !important;
+    float: left !important;
+    height: 65px !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding-left: 30px !important;
+    width: 200px !important;
+}
+
+#socialnetworking li a {
+    background-color: transparent !important;
+    display: block !important;
+    height: 65px !important;
+    text-indent: -9999px !important;
+    width: 200px !important;
+}
+
+/*#socialnetworking li a:hover {*/
+/*color: #85C7ED;*/
+/*background-position: 0px -16px;*/
+/*height: 49px !important;*/
+/*position: absolute;*/
+/*z-index: 9999999;*/
+/*}*/
+
+#twitter {
+    background: transparent url(../images/twitter-follow-me-button-197-65.jpg) no-repeat scroll 0 0em;
+}
+
+#facebook {
+    background: transparent url(../images/join_group_facebook_197_65.gif) no-repeat scroll 0 0em;
+}
+
+#footer {
+    padding-top: 5px;
+    padding-right: 5px;
+    float: right;
+}
+
+#footer a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#footer a:active {
+    color: black;
+    text-decoration: none;
+}
+
+#footer a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#social {
+    padding-top: 5px;
+    padding-right: 5px;
+    float: left;
+}
+
+#social a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#social a:active {
+    color: black;
+    text-decoration: none;
+}
+
+#social a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#social a:hover {
+    color: black;
     text-decoration: none;
 }

@@ -27,11 +27,11 @@ config.action_view.cache_template_loading            = true
 # Enable threaded mode
 # config.threadsafe!
 
-config.action_mailer.smtp_settings = {
-        :address        => "smtp.gmail.com",
-        :port           => 587,
-        :domain         => "monkey@domain.com",
-        :authentication => :plain,
-        :user_name      => "monkey@domain.com",
-        :password       => "banana"
-}
+##config.action_mailer.smtp_settings = {
+##        :address        => "smtp.gmail.com",
+##        :port           => 587,
+##        :domain         => "monkey@domain.com",
+##        :authentication => :plain,
+##        :user_name      => "monkey@domain.com",
+##        :password       => "banana"
+#}

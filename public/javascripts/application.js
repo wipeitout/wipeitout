@@ -7,11 +7,11 @@ jQuery.ajaxSetup({
     }
 });
 
+
 jQuery.fn.submitWithAjax = function() {
     this.submit(function() {
         $.post(this.action, $(this).serialize(), null, "script");
         return false;
-        // redirect to email writing page
     });
     return this;
 };
@@ -20,7 +20,9 @@ $(document).ready(function() {
     $("#new_supporter").submitWithAjax();
 });
 
+
 $(document).ready(function() {
+
     $("#new_supporter").validate({
         errorPlacement: function(error, element) {
             var firstChild = $(element).parent().children()[0];
@@ -56,4 +58,11 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function() {
 
+    $("#supporter_by_2014").bind("click", function(e) {
+        //var name = e.nodeName;
+        //$("#pledge_types").after("<h2>Hello!</h2>");
+    });
+
+});

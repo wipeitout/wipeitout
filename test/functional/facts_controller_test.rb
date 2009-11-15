@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class FactsControllerTest < ActionController::TestCase
-  test "should get index" do
+  test "should get show" do
     get :index
     assert_response :success
     assert_not_nil assigns(:facts)

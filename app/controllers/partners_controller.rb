@@ -5,8 +5,7 @@ class PartnersController < ApplicationController
     @partners = Partner.all
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @partners }
+      format.html # show.html.erbrb      format.xml  { render :xml => @partners }
     end
   end
 end

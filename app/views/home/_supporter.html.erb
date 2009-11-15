@@ -5,33 +5,53 @@
     <div id="pledges" class="supporter_form">
       <h2>Pledge your support!</h2>
 
-      <p>
-        <%= f.check_box :now %>
-        <%= f.label :now, "Now: I pledge to wipe my butt with recycled toilet paper only. Next time I buy toilet paper for my household, I’ll put the onus on myself to choose a recycled type of toilet paper." %>
-        <br/>
-      </p>
+      <div id="pledge_types">
+        <p>
+          <%= f.check_box :now %>
+          <%= f.label :now, "Now: I pledge to wipe my butt with recycled toilet paper only. Next time I buy toilet paper for my household, I’ll put the onus on myself to choose a recycled type of toilet paper." %>
+          <br/>
+        </p>
 
-      <p>
-        <%= f.check_box :by_2014 %>
-        <%= f.label :by_2014, "By 2014: I pledge my support for my supermarket and workplace to phase out non-recycled toilet paper by 2014. I’m happy to get softness and affordability, but it needs to be recycled." %>
-        <br/>
-      </p>
+        <p>
+          <%= f.check_box :by_2014 %>
+          <%= f.label :by_2014, "By 2014: I pledge my support for my supermarket and workplace to phase out non-recycled toilet paper by 2014. I’m happy to get softness and affordability, but it needs to be recycled." %>
+          <br/>
+        </p>
+      </div>
 
+      <!--<div id="supermarkets">-->
+        <!--<h3>Select the local supermarkets you shop at:</h3>-->
+
+        <!--<table>-->
+          <!--<tr>-->
+            <!--<td><%= f.check_box :woolworths %> <img src="images/supermarkets/woolworths.png"></td>-->
+            <!--<td><%= f.check_box :iga %> <img src="images/supermarkets/iga.png"></td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+            <!--<td><%= f.check_box :coles %> <img src="images/supermarkets/coles.png"></td>-->
+            <!--<td><%= f.check_box :aldi %> <img src="images/supermarkets/aldi.png"></td>-->
+          <!--</tr>-->
+        <!--</table>-->
+      <!--</div>-->
+      
     </div>
     <div id="supporter_details" class="supporter_form">
+
+      <div id="notice"></div>
+
       <p>
         <%= f.label :name %> <br/>
-        <%= f.text_field :name, :class => "required" %>
+        <%= f.text_field :name, :class => "required, supporter_input" %>
       </p>
 
       <p>
         <%= f.label :postcode %><br/>
-        <%= f.text_field :postcode, :class => "required" %>
+        <%= f.text_field :postcode, :class => "required, supporter_input" %>
       </p>
 
       <p>
         <%= f.label :email %><br/>
-        <%= f.text_field :email, :class => "required email" %>
+        <%= f.text_field :email, :class => "required email, supporter_input" %>
       </p>
 
       <p>
@@ -40,7 +60,9 @@
         <br/>
       </p>
 
-      <%= image_submit_tag('submit_button_new.png') %>
+      <!--<%= recaptcha_tags %>-->
+
+      <%= image_submit_tag('submit_button_square_2.png') %>
 
     </div>
 <% end %>

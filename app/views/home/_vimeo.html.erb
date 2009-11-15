@@ -42,8 +42,10 @@
         document.getElementById('vimeo_percent_loaded').innerHTML = data.percent + '%';
     }
 
-    function vimeo_on_finish(swf_id) {
-        document.getElementById('state').innerHTML = 'Finished';
+    function vimeo_on_finish(moogaloop) {
+        moogaloop.api_seekTo(20);
+        window.alert("Finishing vimeo");
+        //document.getElementById('state').innerHTML = 'Finished';
     }
 
     function toggle_loop(el) {
@@ -76,5 +78,5 @@
     var attributes = {};
 
     // For more SWFObject documentation visit: http://code.google.com/p/swfobject/wiki/documentation
-    swfobject.embedSWF("http://vimeo.com/moogaloop.swf", swf_id, "504", "340", "9.0.0", "expressInstall.swf", flashvars, params, attributes);
+    swfobject.embedSWF("http://vimeo.com/moogaloop.swf", swf_id, "504", "360", "9.0.0", "expressInstall.swf", flashvars, params, attributes);
 </script>

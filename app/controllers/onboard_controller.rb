@@ -4,7 +4,7 @@ class OnboardController < ApplicationController
     @onboard = Onboard.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # showhtml.erb
       format.xml  { render :xml => @onboard }
     end
   end
