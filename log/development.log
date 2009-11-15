@@ -24567,3 +24567,82 @@ Processing SupportersController#create (for 127.0.0.1 at 2009-11-15 18:14:27) [P
   [4;36;1mSupporter Load (0.8ms)[0m   [0;1mSELECT * FROM `supporters` [0m
 Rendering supporters/create
 Completed in 297ms (View: 9, DB: 201) | 200 OK [http://0.0.0.0/supporters/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 18:38:51) [GET]
+  [4;35;1mSupporter Load (0.2ms)[0m   [0mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (0.1ms)
+Rendered home/_supporter (10.4ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 25ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SupportersController#create (for 127.0.0.1 at 2009-11-15 18:39:09) [POST]
+  Parameters: {"authenticity_token"=>"IbuoAQdfpb87pzgyGCAJ3KJjvLUz2xF77/bgDYxmhfM=", "supporter"=>{"name"=>"Angry", "now"=>"1", "accept_more_info"=>"1", "postcode"=>"9292", "by_2014"=>"0", "email"=>"aslamsl@maslm.com"}}
+  [4;36;1mPledge Load (0.1ms)[0m   [0;1mSELECT * FROM `pledges` WHERE (name = 'now') LIMIT 1[0m
+  [4;35;1mSupporter Columns (63.1ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSupporter Load (0.3ms)[0m   [0mSELECT `supporters`.id FROM `supporters` WHERE (`supporters`.`email` = BINARY 'aslamsl@maslm.com') LIMIT 1[0m
+  [4;36;1mSupporter Create (0.2ms)[0m   [0;1mINSERT INTO `supporters` (`name`, `accept_more_info`, `created_at`, `postcode`, `updated_at`, `email`) VALUES('Angry', 1, '2009-11-15 07:39:09', 9292, '2009-11-15 07:39:09', 'aslamsl@maslm.com')[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPledge Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `pledges`[0m
+  [4;35;1mCommitment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `commitments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCommitment Create (0.2ms)[0m   [0mINSERT INTO `commitments` (`pledge_id`, `supporter_id`) VALUES(5, 91)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSupporter Load (0.6ms)[0m   [0mSELECT * FROM `supporters` [0m
+Rendering supporters/create
+Completed in 101ms (View: 1, DB: 69) | 200 OK [http://0.0.0.0/supporters/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 18:39:26) [GET]
+  [4;36;1mSupporter Load (0.3ms)[0m   [0;1mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (0.1ms)
+Rendered home/_supporter (18.4ms)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.1ms)
+Completed in 41ms (View: 25, DB: 0) | 200 OK [http://0.0.0.0/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 18:39:54) [GET]
+  [4;35;1mSupporter Load (0.2ms)[0m   [0mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (0.1ms)
+Rendered home/_supporter (18.0ms)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.2ms)
+Completed in 40ms (View: 24, DB: 0) | 200 OK [http://0.0.0.0/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SupportersController#create (for 127.0.0.1 at 2009-11-15 18:40:12) [POST]
+  Parameters: {"authenticity_token"=>"IbuoAQdfpb87pzgyGCAJ3KJjvLUz2xF77/bgDYxmhfM=", "supporter"=>{"name"=>"Tester", "now"=>"1", "accept_more_info"=>"1", "postcode"=>"2929", "by_2014"=>"0", "email"=>"adl@l;ksad.com"}}
+  [4;36;1mPledge Load (0.1ms)[0m   [0;1mSELECT * FROM `pledges` WHERE (name = 'now') LIMIT 1[0m
+  [4;35;1mSupporter Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSupporter Load (0.3ms)[0m   [0mSELECT `supporters`.id FROM `supporters` WHERE (`supporters`.`email` = BINARY 'adl@l;ksad.com') LIMIT 1[0m
+  [4;36;1mSupporter Create (0.2ms)[0m   [0;1mINSERT INTO `supporters` (`name`, `accept_more_info`, `created_at`, `postcode`, `updated_at`, `email`) VALUES('Tester', 1, '2009-11-15 07:40:12', 2929, '2009-11-15 07:40:12', 'adl@l;ksad.com')[0m
+  [4;35;1mSQL (43.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPledge Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `pledges`[0m
+  [4;35;1mCommitment Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `commitments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCommitment Create (0.1ms)[0m   [0mINSERT INTO `commitments` (`pledge_id`, `supporter_id`) VALUES(5, 92)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSupporter Load (0.5ms)[0m   [0mSELECT * FROM `supporters` [0m
+Rendering supporters/create
+Completed in 75ms (View: 1, DB: 48) | 200 OK [http://0.0.0.0/supporters/create]
