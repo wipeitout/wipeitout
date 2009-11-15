@@ -2,21 +2,6 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/VERSION" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/tasks/recaptcha_tasks.rake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/lib/recaptcha/rails.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/test/verify_recaptcha_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/README.rdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/test/recaptcha_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/CHANGELOG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/lib/recaptcha.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/lib/recaptcha/merb.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/lib/recaptcha/verify.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/lib/recaptcha/client_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/recaptcha.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/recaptcha/init.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wipeitout.iws" />
@@ -488,13 +473,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1034" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20464136" sideWeight="0.76864034" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20464136" sideWeight="0.76864034" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
@@ -519,7 +504,7 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="poms flag styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding recaptcha plugin" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -543,18 +528,12 @@
     <MESSAGE value="update to deploy.rb to get smtp_gmail.rb from shared on server" />
     <MESSAGE value="removed username and password from smtp_gmail file" />
     <MESSAGE value="poms flag styling" />
+    <MESSAGE value="adding recaptcha plugin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/facts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="775" selection-end="775" vertical-scroll-proportion="-19.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/supermarket_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="6" selection-start="92" selection-end="92" vertical-scroll-proportion="0.09943503">
@@ -656,6 +635,13 @@
     <entry file="file://$PROJECT_DIR$/config/initializers/smtp_gmail.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="25" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
