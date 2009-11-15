@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project relativePaths="false" version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" name="Default" comment="removed recaptha tags">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/contact/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/supermarket_mailer.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/join_group_facebook_197_65.gif" />
+    <list default="true" readonly="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contact/index.html.erb" afterPath="$PROJECT_DIR$/app/views/contact/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/twitter-follow-me-button-197-65.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/submit_button_square_2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/contact_controller.rb" />
     </list>
     <ignored path="wipeitout.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -739,7 +734,7 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed recaptha tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed styling" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -766,18 +761,12 @@
     <MESSAGE value="adding recaptcha plugin" />
     <MESSAGE value="removed prod settings from dtaabase.yml file" />
     <MESSAGE value="removed recaptha tags" />
+    <MESSAGE value="fixed styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/supermarket_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="92" selection-end="92" vertical-scroll-proportion="0.09943503">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/supporters_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="80" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0">
@@ -816,20 +805,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_social.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/supporters/create.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="772" selection-start="222" selection-end="957" vertical-scroll-proportion="-4.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_thanks.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="0" selection-end="802" vertical-scroll-proportion="-9.307693">
           <folding />
         </state>
       </provider>
@@ -879,6 +854,27 @@
     <entry file="file://$PROJECT_DIR$/app/views/home/_supporter.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="26" selection-start="1791" selection-end="1791" vertical-scroll-proportion="-11.307693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/contact/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="228" selection-start="377" selection-end="377" vertical-scroll-proportion="0.1563981">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/_thanks.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="20" selection-start="536" selection-end="536" vertical-scroll-proportion="-9.307693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/supporters/create.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="530" selection-start="506" selection-end="715" vertical-scroll-proportion="-4.230769">
           <folding />
         </state>
       </provider>
