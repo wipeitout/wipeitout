@@ -24746,3 +24746,42 @@ Rendering poms/index
 Rendered layouts/_footer (0.1ms)
 Rendered layouts/_social (0.1ms)
 Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/poms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 19:59:11) [GET]
+  [4;36;1mSupporter Load (65.3ms)[0m   [0;1mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (0.1ms)
+Rendered home/_supporter (12.8ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 153ms (View: 21, DB: 65) | 200 OK [http://0.0.0.0/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 19:59:25) [GET]
+  [4;35;1mSupporter Load (0.2ms)[0m   [0mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (0.2ms)
+Rendered home/_supporter (18.4ms)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.1ms)
+Completed in 41ms (View: 25, DB: 0) | 200 OK [http://0.0.0.0/home]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 19:59:35) [GET]
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (0.1ms)
+Rendered home/_supporter (43.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 71ms (View: 48, DB: 4) | 200 OK [http://0.0.0.0/home]
