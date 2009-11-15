@@ -133,6 +133,10 @@ ul.bulleted_list {
     width: 400px;
 }
 
+.union_jack {
+    padding-right: 14px;
+}
+
 #content img {
     padding-top: 20px;
 }

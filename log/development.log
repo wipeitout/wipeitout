@@ -24646,3 +24646,103 @@ Processing SupportersController#create (for 127.0.0.1 at 2009-11-15 18:40:12) [P
   [4;35;1mSupporter Load (0.5ms)[0m   [0mSELECT * FROM `supporters` [0m
 Rendering supporters/create
 Completed in 75ms (View: 1, DB: 48) | 200 OK [http://0.0.0.0/supporters/create]
+  [4;36;1mSQL (23.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (14.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PomsController#index (for 127.0.0.1 at 2009-11-15 19:20:07) [GET]
+Rendering template within layouts/application
+Rendering poms/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 69ms (View: 66, DB: 38) | 200 OK [http://0.0.0.0/poms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PomsController#index (for 127.0.0.1 at 2009-11-15 19:22:04) [GET]
+Rendering template within layouts/application
+Rendering poms/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/poms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PomsController#index (for 127.0.0.1 at 2009-11-15 19:22:15) [GET]
+Rendering template within layouts/application
+Rendering poms/index
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/poms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PomsController#index (for 127.0.0.1 at 2009-11-15 19:22:27) [GET]
+Rendering template within layouts/application
+Rendering poms/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 7ms (View: 4, DB: 2) | 200 OK [http://0.0.0.0/poms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PomsController#index (for 127.0.0.1 at 2009-11-15 19:22:35) [GET]
+Rendering template within layouts/application
+Rendering poms/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/poms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PomsController#index (for 127.0.0.1 at 2009-11-15 19:22:47) [GET]
+Rendering template within layouts/application
+Rendering poms/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/poms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PomsController#index (for 127.0.0.1 at 2009-11-15 19:22:53) [GET]
+Rendering template within layouts/application
+Rendering poms/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/poms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PomsController#index (for 127.0.0.1 at 2009-11-15 19:23:06) [GET]
+Rendering template within layouts/application
+Rendering poms/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/poms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PomsController#index (for 127.0.0.1 at 2009-11-15 19:23:14) [GET]
+Rendering template within layouts/application
+Rendering poms/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/poms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PomsController#index (for 127.0.0.1 at 2009-11-15 19:23:27) [GET]
+Rendering template within layouts/application
+Rendering poms/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/poms]
