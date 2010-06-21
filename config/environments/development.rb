@@ -17,13 +17,8 @@ config.action_controller.perform_caching             = false
 #config.action_mailer.raise_delivery_errors = false
 #config.action_mailer.delivery_method = :sendmail
 
-#config.action_mailer.smtp_settings = {
-#        :address        => "smtp.gmail.com",
-#        :port           => 587,
-#        :authentication => :plain,
-#        :user_name      => "aaron@wipeitout.com.au",
-#        :password       => "aaron77"
-#}
+#ActionMailer::Base.default_url_options[:host] = "0.0.0.0:3000"
+config.action_mailer.default_url_options = { :host => "0.0.0.0:3000" } 
 
 ENV['RECAPTCHA_PUBLIC_KEY']  = '6LeSXQkAAAAAAPqpN7X5VBmayoodSrGgvBrZ0wJB'
 ENV['RECAPTCHA_PRIVATE_KEY'] = '6LeSXQkAAAAAABIUYsYr3AYqVKkHryO0qUL7QAi2'

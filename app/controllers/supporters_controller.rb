@@ -42,7 +42,7 @@ class SupportersController < ApplicationController
 
   def create_commitments(pledges, supporter)
     pledges.each do |p|
-      Commitment.create(:pledge_id => p.id) do |c|
+      Commitment.create(:pledge_id => p.id, :commit_date => Date.today, :completed_date => Date.today) do |c|
         c.supporter_id = supporter.id
       end
     end

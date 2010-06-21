@@ -1,0 +1,140 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facts" [0m
+
+
+Processing FactsController#create (for 0.0.0.0 at 2010-04-07 21:31:17) [POST]
+  Parameters: {"fact"=>{}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "facts" [0m
+
+
+Processing FactsController#new (for 0.0.0.0 at 2010-04-07 21:31:17) [GET]
+
+
+Processing FactsController#index (for 0.0.0.0 at 2010-04-07 21:31:17) [GET]
+  [4;36;1mFact Load (0.2ms)[0m   [0;1mSELECT * FROM "facts" [0m
+Rendering template within layouts/application
+Rendering facts/index
+Rendered facts/_youtube (3.2ms)
+Rendered layouts/_footer (0.5ms)
+Rendered layouts/_social (3.0ms)
+Completed in 47ms (View: 46, DB: 0) | 200 OK [http://test.host/facts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "partners" [0m
+
+
+Processing PartnersController#create (for 0.0.0.0 at 2010-04-07 21:31:17) [POST]
+  Parameters: {"partner"=>{}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "partners" [0m
+
+
+Processing PartnersController#new (for 0.0.0.0 at 2010-04-07 21:31:17) [GET]
+
+
+Processing PartnersController#index (for 0.0.0.0 at 2010-04-07 21:31:17) [GET]
+  [4;35;1mPartner Load (0.2ms)[0m   [0mSELECT * FROM "partners" [0m
+Rendering template within layouts/application
+Rendering partners/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/partners]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pledges" [0m
+
+
+Processing PledgesController#create (for 0.0.0.0 at 2010-04-07 21:31:17) [POST]
+  Parameters: {"pledge"=>{}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "pledges" [0m
+
+
+Processing PledgesController#new (for 0.0.0.0 at 2010-04-07 21:31:17) [GET]
+
+
+Processing PledgesController#index (for 0.0.0.0 at 2010-04-07 21:31:17) [GET]
+  [4;36;1mPledge Load (0.2ms)[0m   [0;1mSELECT * FROM "pledges" [0m
+Rendering template within layouts/application
+Rendering pledges/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/pledges]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "supermarkets" [0m
+
+
+Processing SupermarketsController#create (for 0.0.0.0 at 2010-04-07 21:31:17) [POST]
+  Parameters: {"supermarket"=>{}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "supermarkets" [0m
+
+
+Processing SupermarketsController#new (for 0.0.0.0 at 2010-04-07 21:31:17) [GET]
+
+
+Processing SupermarketsController#index (for 0.0.0.0 at 2010-04-07 21:31:17) [GET]
+  [4;35;1mSupermarket Load (0.2ms)[0m   [0mSELECT * FROM "supermarkets" [0m
+Rendering template within layouts/application
+Rendering supermarkets/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facts" [0m
+
+
+Processing FactsController#create (for 0.0.0.0 at 2010-04-07 21:34:50) [POST]
+  Parameters: {"fact"=>{}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "facts" [0m
+
+
+Processing FactsController#new (for 0.0.0.0 at 2010-04-07 21:34:50) [GET]
+
+
+Processing FactsController#index (for 0.0.0.0 at 2010-04-07 21:34:50) [GET]
+  [4;36;1mFact Load (0.2ms)[0m   [0;1mSELECT * FROM "facts" [0m
+Rendering template within layouts/application
+Rendering facts/index
+Rendered facts/_youtube (3.2ms)
+Rendered layouts/_footer (0.6ms)
+Rendered layouts/_social (0.5ms)
+Completed in 22ms (View: 21, DB: 0) | 200 OK [http://test.host/facts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "partners" [0m
+
+
+Processing PartnersController#create (for 0.0.0.0 at 2010-04-07 21:34:50) [POST]
+  Parameters: {"partner"=>{}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "partners" [0m
+
+
+Processing PartnersController#new (for 0.0.0.0 at 2010-04-07 21:34:50) [GET]
+
+
+Processing PartnersController#index (for 0.0.0.0 at 2010-04-07 21:34:50) [GET]
+  [4;35;1mPartner Load (0.2ms)[0m   [0mSELECT * FROM "partners" [0m
+Rendering template within layouts/application
+Rendering partners/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/partners]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pledges" [0m
+
+
+Processing PledgesController#create (for 0.0.0.0 at 2010-04-07 21:34:50) [POST]
+  Parameters: {"pledge"=>{}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "pledges" [0m
+
+
+Processing PledgesController#new (for 0.0.0.0 at 2010-04-07 21:34:50) [GET]
+
+
+Processing PledgesController#index (for 0.0.0.0 at 2010-04-07 21:34:50) [GET]
+  [4;36;1mPledge Load (0.2ms)[0m   [0;1mSELECT * FROM "pledges" [0m
+Rendering template within layouts/application
+Rendering pledges/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/pledges]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "supermarkets" [0m
+
+
+Processing SupermarketsController#create (for 0.0.0.0 at 2010-04-07 21:34:50) [POST]
+  Parameters: {"supermarket"=>{}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "supermarkets" [0m
+
+
+Processing SupermarketsController#new (for 0.0.0.0 at 2010-04-07 21:34:50) [GET]
+
+
+Processing SupermarketsController#index (for 0.0.0.0 at 2010-04-07 21:34:50) [GET]
+  [4;35;1mSupermarket Load (0.2ms)[0m   [0mSELECT * FROM "supermarkets" [0m
+Rendering template within layouts/application
+Rendering supermarkets/index

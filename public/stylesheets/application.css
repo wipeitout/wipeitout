@@ -81,16 +81,6 @@ ul.bulleted_list {
     padding-left: 3em;
 }
 
-#navigation {
-    width: 100%;
-    background: black;
-    float: left;
-    list-style: none;
-    margin: 0;
-    padding: 8px 12px 8px 12px;
-    line-height: 30px;
-}
-
 #vimeo {
     height: 370px;
     padding-top: 30px; /*  new gm*/
@@ -188,6 +178,16 @@ ul.bulleted_list {
     padding-bottom: 10px
 }
 
+#navigation {
+    width: 100%;
+    background: black;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 8px 12px 0px 12px;
+    line-height: 30px;
+}
+
 #navigation ul {
     margin: 0px;
     padding: 0px;
@@ -199,7 +199,7 @@ ul.bulleted_list {
     display: inline;
     float: left;
     list-style: none;
-    margin-left: 10px;
+    margin-left: 35px;
     position: relative;
 }
 
@@ -208,12 +208,17 @@ ul.bulleted_list {
     display: block;
     float: left;
     margin: 0;
-    padding-right: 15px;
+    padding-right: 20px;
     text-decoration: none;
 }
 
 #navigation li a:hover {
     color: #85C7ED;
+}
+
+#navigation li img {
+    /*padding-left: 15px;*/
+    /*padding-right: 15px;*/
 }
 
 label.error {

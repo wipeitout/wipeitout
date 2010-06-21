@@ -9,11 +9,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091107232610) do
+ActiveRecord::Schema.define(:version => 20100501020251) do
 
   create_table "commitments", :id => false, :force => true do |t|
-    t.integer "supporter_id", :null => false
-    t.integer "pledge_id",    :null => false
+    t.integer "supporter_id",   :null => false
+    t.integer "pledge_id",      :null => false
+    t.date    "commit_date"
+    t.date    "completed_date"
+  end
+
+  create_table "emails", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "facts", :force => true do |t|
@@ -47,12 +56,20 @@ ActiveRecord::Schema.define(:version => 20091107232610) do
   end
 
   create_table "supermarkets", :force => true do |t|
+    t.text     "name"
+    t.text     "url"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_path",       :null => false
     t.text     "email_to_person",  :null => false
     t.text     "email_to_address", :null => false
-    t.string   "name",             :null => false
+  end
+
+  create_table "supporter_emails", :id => false, :force => true do |t|
+    t.integer "supporter_id",   :null => false
+    t.integer "email_id",       :null => false
+    t.date    "commit_date",    :null => false
+    t.date    "completed_date"
   end
 
   create_table "supporters", :force => true do |t|
@@ -62,11 +79,6 @@ ActiveRecord::Schema.define(:version => 20091107232610) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "email",            :default => "fake@wipeitout.com.au", :null => false
-  end
-
-  create_table "supporters_pledges", :id => false, :force => true do |t|
-    t.integer "supporter_id", :null => false
-    t.integer "pledge_id",    :null => false
   end
 
   create_table "whattobuys", :force => true do |t|

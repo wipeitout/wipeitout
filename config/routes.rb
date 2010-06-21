@@ -1,4 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :unsubscribe
+
+  map.resources :privacy
+
+  map.resources :media
+
+  map.resources :theplan
+
+  map.resources :qantas_supporters
+
   map.resources :supermarkets
 
   map.resources :pledges

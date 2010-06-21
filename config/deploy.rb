@@ -33,4 +33,4 @@ namespace :deploy do
 
 end
 
-after 'deploy:update_code', 'deploy:symlink_shared'
+

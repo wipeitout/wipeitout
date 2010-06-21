@@ -1,11 +1,11 @@
 ActionMailer::Base.smtp_settings = {
-        :enable_starttls_auto => true, 
+        :enable_starttls_auto => true,
         :address => "smtp.gmail.com",
-        :domain => "wipeitout.com.au",
         :port => 587,
         :authentication => :plain,
-        :user_name => "xxx",
-        :password => "yyy" }
+        :user_name => "aaron@wipeitout.com.au",
+        :password => "aaron77"
+}
 ActionMailer::Base.perform_deliveries = true
 ActionMailer::Base.raise_delivery_errors = true
 ActionMailer::Base.default_charset = "utf-8"
