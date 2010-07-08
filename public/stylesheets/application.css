@@ -67,6 +67,14 @@ p.important_blue {
     padding: 50px 30px 50px 30px;
 }
 
+#toilet-paper-grid {
+    padding-left: 130px;
+}
+
+.media_content {
+    padding: 30px 30px 50px 30px;
+}
+
 .onboard ul li {
     display: inline;
     list-style: none;
@@ -153,6 +161,10 @@ ul.bulleted_list {
 
 #the_facts {
     padding-top: 20px;
+}
+
+#no_heading_text {
+    margin-top: 30px;
 }
 
 #facts_youtube {

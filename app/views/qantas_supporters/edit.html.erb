@@ -6,19 +6,10 @@
 
 <p>Our aim is to work with Australian companies to educate everyone that we can make a difference.</p>
 
-<!--<% form_for :qantas_supporter, @qantas_supporter, :url => { :controller => "qantas_supporters", :action => "update" }  do |f| %>-->
+<% form_for :qantas_supporter, @qantas_supporter, :url => { :controller => "qantas_supporters", :action => "update" }  do |f| %>
 
     <!--, :html => {:id => @qantas_supporter.id }, :url => { :controller => "qantas_supporters", :action => "create" } -->
-    <!---->
-      <!--<%= image_submit_tag('submit_button_square_2.png') %>-->
 
-<!--<% end %>-->
+      <%= image_submit_tag('submit_button_square_2.png') %>
 
-
-<% form_for(@qantas_supporter) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
 <% end %>

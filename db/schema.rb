@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100501020251) do
+ActiveRecord::Schema.define(:version => 20100627041448) do
 
   create_table "commitments", :id => false, :force => true do |t|
     t.integer "supporter_id",   :null => false
@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(:version => 20100501020251) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "email",            :default => "fake@wipeitout.com.au", :null => false
+    t.boolean  "unsubscribed",     :default => false
   end
 
   create_table "whattobuys", :force => true do |t|

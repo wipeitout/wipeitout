@@ -1,40 +1,15 @@
 class UnsubscribeController < ApplicationController
+
   # GET /unsubscribe
   # GET /unsubscribe.xml
   def index
-    @unsubscribes = Unsubscribe.all
+#    @unsubscribes = Unsubscribe.all
+    @unsubscribe = Unsubscribe.find(params[:id])
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @unsubscribes }
     end
-  end
-
-  # GET /unsubscribe/1
-  # GET /unsubscribe/1.xml
-  def show
-    @unsubscribe = Unsubscribe.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @unsubscribe }
-    end
-  end
-
-  # GET /unsubscribe/new
-  # GET /unsubscribe/new.xml
-  def new
-    @unsubscribe = Unsubscribe.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @unsubscribe }
-    end
-  end
-
-  # GET /unsubscribe/1/edit
-  def edit
-    @unsubscribe = Unsubscribe.find(params[:id])
   end
 
   # PUT /unsubscribe/1

@@ -34317,3 +34317,2126 @@ Rendering media/index
 Rendered layouts/_footer (0.1ms)
 Rendered layouts/_social (0.1ms)
 Completed in 16ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (14.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (13.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (35.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (168.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSupporters (20091011002100)
+Migrating to CreatePledges (20091011002110)
+Migrating to CreatePledgeTypes (20091011041041)
+Migrating to AddEmailAddressToSupporters (20091011053026)
+Migrating to CreateCommitmentsJoin (20091011062841)
+Migrating to CreateFacts (20091024234017)
+Migrating to PopulateFacts (20091025001300)
+Migrating to CreatePartners (20091025013224)
+Migrating to CreateSupermarkets (20091031051435)
+Migrating to AddColumnsToSupermarkets (20091031052139)
+Migrating to PopulateSupermarkets (20091031052150)
+Migrating to CreateOnboards (20091031235842)
+Migrating to UpdatePartnersWithColumns (20091101000303)
+Migrating to PopulateOnboards (20091101013704)
+Migrating to CreateWhattobuys (20091101022359)
+Migrating to PopulateWhattobuy (20091101034025)
+Migrating to PopulatePledges (20091107232610)
+Migrating to AddCommitmentDates (20100501002926)
+Migrating to CreateSupporterEmails (20100501012218)
+Migrating to CreateEmails (20100501012543)
+Migrating to AddQantasEmails (20100501020251)
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (107.8ms)[0m   [0mSHOW FIELDS FROM `commitments`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `commitments`[0m
+  [4;35;1mSQL (37.5ms)[0m   [0mSHOW KEYS FROM `commitments`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `emails`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `emails`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `emails`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `facts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `facts`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `facts`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `onboards`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `onboards`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `onboards`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `partners`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `partners`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `pledges`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `pledges`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `pledges`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `supermarkets`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `supermarkets`[0m
+  [4;35;1mSQL (11.5ms)[0m   [0mSHOW KEYS FROM `supermarkets`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `supporter_emails`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `supporter_emails`[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mSHOW KEYS FROM `supporter_emails`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `supporters`[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mSHOW KEYS FROM `supporters`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `whattobuys`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `whattobuys`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `whattobuys`[0m
+  [4;36;1mSQL (12.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (13.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-27 13:31:48) [GET]
+  [4;36;1mSupporter Load (0.4ms)[0m   [0;1mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (7.4ms)
+Rendered home/_supporter (85.1ms)
+Rendered layouts/_footer (11.4ms)
+Rendered layouts/_social (10.5ms)
+Completed in 247ms (View: 197, DB: 27) | 200 OK [http://0.0.0.0/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 13:54:50) [GET]
+  [4;35;1mUnsubscribe Load (0.0ms)[0m   [0mMysql::Error: Table 'wipeitout_development.unsubscribes' doesn't exist: SELECT * FROM `unsubscribes` [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'wipeitout_development.unsubscribes' doesn't exist: SELECT * FROM `unsubscribes` ):
+  app/controllers/unsubscribe_controller.rb:6:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (117.9ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 13:57:27) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 13:57:43) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 13:57:47) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.1ms)
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 13:58:06) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 13:59:39) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 13:59:44) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 13:59:49) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 14:00:08) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (13.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 14:00:19) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 34ms (View: 3, DB: 14) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 14:00:39) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 14:00:53) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 14:01:02) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (3.3ms)
+Completed in 63ms (View: 58, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 14:04:37) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 14:04:48) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 14:04:54) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UnsubscribeController#index (for 127.0.0.1 at 2010-06-27 14:05:37) [GET]
+Rendering template within layouts/application
+Rendering unsubscribe/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/unsubscribe]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-27 14:05:46) [GET]
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (0.1ms)
+Rendered home/_supporter (8.2ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 23ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/home]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSupporters (20091011002100)
+Migrating to CreatePledges (20091011002110)
+Migrating to CreatePledgeTypes (20091011041041)
+Migrating to AddEmailAddressToSupporters (20091011053026)
+Migrating to CreateCommitmentsJoin (20091011062841)
+Migrating to CreateFacts (20091024234017)
+Migrating to PopulateFacts (20091025001300)
+Migrating to CreatePartners (20091025013224)
+Migrating to CreateSupermarkets (20091031051435)
+Migrating to AddColumnsToSupermarkets (20091031052139)
+Migrating to PopulateSupermarkets (20091031052150)
+Migrating to CreateOnboards (20091031235842)
+Migrating to UpdatePartnersWithColumns (20091101000303)
+Migrating to PopulateOnboards (20091101013704)
+Migrating to CreateWhattobuys (20091101022359)
+Migrating to PopulateWhattobuy (20091101034025)
+Migrating to PopulatePledges (20091107232610)
+Migrating to AddCommitmentDates (20100501002926)
+Migrating to CreateSupporterEmails (20100501012218)
+Migrating to CreateEmails (20100501012543)
+Migrating to AddQantasEmails (20100501020251)
+Migrating to UpdateSupportersWithUnsubscribed (20100627040625)
+  [4;36;1mSQL (741.7ms)[0m   [0;1mALTER TABLE `supporters` ADD `unsubscribed` tinyint(1) DEFAULT 0[0m
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (50.7ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = '--- :unsubscribed\n') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSupporters (20091011002100)
+Migrating to CreatePledges (20091011002110)
+Migrating to CreatePledgeTypes (20091011041041)
+Migrating to AddEmailAddressToSupporters (20091011053026)
+Migrating to CreateCommitmentsJoin (20091011062841)
+Migrating to CreateFacts (20091024234017)
+Migrating to PopulateFacts (20091025001300)
+Migrating to CreatePartners (20091025013224)
+Migrating to CreateSupermarkets (20091031051435)
+Migrating to AddColumnsToSupermarkets (20091031052139)
+Migrating to PopulateSupermarkets (20091031052150)
+Migrating to CreateOnboards (20091031235842)
+Migrating to UpdatePartnersWithColumns (20091101000303)
+Migrating to PopulateOnboards (20091101013704)
+Migrating to CreateWhattobuys (20091101022359)
+Migrating to PopulateWhattobuy (20091101034025)
+Migrating to PopulatePledges (20091107232610)
+Migrating to AddCommitmentDates (20100501002926)
+Migrating to CreateSupporterEmails (20100501012218)
+Migrating to CreateEmails (20100501012543)
+Migrating to AddQantasEmails (20100501020251)
+Migrating to UpdateSupportersWithUnsubscribed (20100627040625)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate column name 'unsubscribed': ALTER TABLE `supporters` ADD `unsubscribed` tinyint(1) DEFAULT 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSupporters (20091011002100)
+Migrating to CreatePledges (20091011002110)
+Migrating to CreatePledgeTypes (20091011041041)
+Migrating to AddEmailAddressToSupporters (20091011053026)
+Migrating to CreateCommitmentsJoin (20091011062841)
+Migrating to CreateFacts (20091024234017)
+Migrating to PopulateFacts (20091025001300)
+Migrating to CreatePartners (20091025013224)
+Migrating to CreateSupermarkets (20091031051435)
+Migrating to AddColumnsToSupermarkets (20091031052139)
+Migrating to PopulateSupermarkets (20091031052150)
+Migrating to CreateOnboards (20091031235842)
+Migrating to UpdatePartnersWithColumns (20091101000303)
+Migrating to PopulateOnboards (20091101013704)
+Migrating to CreateWhattobuys (20091101022359)
+Migrating to PopulateWhattobuy (20091101034025)
+Migrating to PopulatePledges (20091107232610)
+Migrating to AddCommitmentDates (20100501002926)
+Migrating to CreateSupporterEmails (20100501012218)
+Migrating to CreateEmails (20100501012543)
+Migrating to AddQantasEmails (20100501020251)
+Migrating to UpdateSupportersWithUnsubscribed (20100627040625)
+  [4;36;1mSQL (392.2ms)[0m   [0;1mALTER TABLE `supporters` ADD `unsubscribed` tinyint(1) DEFAULT 0[0m
+  [4;35;1mSQL (99.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100627040625')[0m
+Migrating to PopulateSupportersUnsubscribed (20100627041448)
+  [4;36;1mSupporter Update (70.5ms)[0m   [0;1mUPDATE `supporters` SET `unsubscribed` = 0 [0m
+  [4;35;1mSQL (68.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100627041448')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `commitments`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `commitments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `commitments`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `emails`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `emails`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `emails`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `facts`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `facts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `facts`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `onboards`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `onboards`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `onboards`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `partners`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `partners`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `pledges`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `pledges`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `pledges`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `supermarkets`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `supermarkets`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `supermarkets`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `supporter_emails`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `supporter_emails`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `supporter_emails`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `supporters`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `supporters`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `whattobuys`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `whattobuys`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `whattobuys`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SupportersController#create (for 127.0.0.1 at 2010-06-27 14:28:23) [POST]
+  Parameters: {"authenticity_token"=>"Z4LGWVT9QKcU03/CmFB/n3WvWmOO2R4S1vw5ps4YHR8=", "supporter"=>{"name"=>"Glenn Mason", "now"=>"1", "accept_more_info"=>"1", "postcode"=>"2089", "by_2014"=>"1", "email"=>"mason.glenn@gmail.com"}}
+  [4;36;1mPledge Load (0.5ms)[0m   [0;1mSELECT * FROM `pledges` WHERE (name = 'now') LIMIT 1[0m
+  [4;35;1mPledge Load (0.2ms)[0m   [0mSELECT * FROM `pledges` WHERE (name = 'by_2014') LIMIT 1[0m
+  [4;36;1mSupporter Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `supporters`[0m
+  [4;35;1mSQL (11.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSupporter Load (8.5ms)[0m   [0;1mSELECT `supporters`.id FROM `supporters` WHERE (`supporters`.`email` = BINARY 'mason.glenn@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  app/controllers/supporters_controller.rb:13:in `create'
+  app/controllers/supporters_controller.rb:10:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-05 10:11:28) [GET]
+  [4;36;1mSupporter Load (9.4ms)[0m   [0;1mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (12.3ms)
+Rendered home/_supporter (89.8ms)
+Rendered layouts/_footer (19.3ms)
+Rendered layouts/_social (11.4ms)
+Completed in 292ms (View: 225, DB: 10) | 200 OK [http://0.0.0.0/home]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:17:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (124.0ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 226ms (View: 78, DB: 125) | 200 OK [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SupportersController#create (for 127.0.0.1 at 2010-07-05 15:17:16) [POST]
+  Parameters: {"authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/supporters_controller.rb:54:in `extract_pledges'
+  app/controllers/supporters_controller.rb:7:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (6.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:19:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 49ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#1 (for 127.0.0.1 at 2010-07-05 15:20:05) [POST]
+  Parameters: {"authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 1. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:21:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 69ms (View: 36, DB: 1) | 200 OK [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#1 (for 127.0.0.1 at 2010-07-05 15:21:09) [POST]
+  Parameters: {"authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 1. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:21:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.3ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 28ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#1 (for 127.0.0.1 at 2010-07-05 15:22:17) [POST]
+  Parameters: {"authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 1. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:24:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (1.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 23ms (View: 6, DB: 3) | 200 OK [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#1 (for 127.0.0.1 at 2010-07-05 15:24:17) [POST]
+  Parameters: {"authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 1. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (4.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:25:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 25ms (View: 10, DB: 6) | 200 OK [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#1 (for 127.0.0.1 at 2010-07-05 15:25:54) [POST]
+  Parameters: {"x"=>"165", "y"=>"26", "authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 1. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#1 (for 127.0.0.1 at 2010-07-05 15:29:26) [POST]
+  Parameters: {"x"=>"165", "y"=>"26", "authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 1. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:29:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 27ms (View: 12, DB: 3) | 200 OK [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#1 (for 127.0.0.1 at 2010-07-05 15:29:36) [POST]
+  Parameters: {"x"=>"143", "y"=>"41", "authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 1. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:29:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 24ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/qantas_supporters/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:29:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (1.7ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 21ms (View: 5, DB: 3) | 200 OK [http://0.0.0.0/qantas_supporters/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#2 (for 127.0.0.1 at 2010-07-05 15:29:57) [POST]
+  Parameters: {"x"=>"185", "y"=>"36", "authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 2. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:30:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 19ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/qantas_supporters/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 15:30:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.3ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.1ms)
+Completed in 23ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/qantas_supporters/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#2 (for 127.0.0.1 at 2010-07-05 15:30:58) [POST]
+  Parameters: {"x"=>"194", "y"=>"22", "authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 2. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (23.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (12.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 16:27:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 28ms (View: 13, DB: 36) | 200 OK [http://0.0.0.0/qantas_supporters/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 16:27:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 24ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/qantas_supporters/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#create (for 127.0.0.1 at 2010-07-05 16:27:35) [POST]
+  Parameters: {"x"=>"110", "y"=>"42", "authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActiveRecord::RecordNotFound (Couldn't find Supporter without an ID):
+  app/controllers/qantas_supporters_controller.rb:21:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (5.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 16:49:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+
+ActionView::TemplateError (undefined method `supporter_path' for #<ActionView::Base:0xb689e3e0>) on line #9 of app/views/qantas_supporters/show.html.erb:
+6: 
+7: <p>Our aim is to work with Australian companies to educate everyone that we can make a difference.</p>
+8: 
+9: <% form_for @qantas_supporter do |f| %>
+10: 
+11:     <!--, :html => {:id => @qantas_supporter.id }, :url => { :controller => "qantas_supporters", :action => "create" } -->
+12:     
+
+    app/views/qantas_supporters/show.html.erb:9
+    app/controllers/qantas_supporters_controller.rb:11:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 16:51:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 27ms (View: 12, DB: 2) | 200 OK [http://0.0.0.0/qantas_supporters/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#2 (for 127.0.0.1 at 2010-07-05 16:51:17) [POST]
+  Parameters: {"x"=>"241", "y"=>"29", "authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 2. Actions: create and show):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 16:56:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+
+ActionView::TemplateError (undefined method `supporter_path' for #<ActionView::Base:0xb663764c>) on line #9 of app/views/qantas_supporters/show.html.erb:
+6: 
+7: <p>Our aim is to work with Australian companies to educate everyone that we can make a difference.</p>
+8: 
+9: <% form_for @qantas_supporter do |f| %>
+10: 
+11:     <!--, :html => {:id => @qantas_supporter.id }, :url => { :controller => "qantas_supporters", :action => "create" } -->
+12:     
+
+    app/views/qantas_supporters/show.html.erb:9
+    app/controllers/qantas_supporters_controller.rb:11:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (145.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 16:56:13) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (7.4ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.3ms)
+Completed in 32ms (View: 11, DB: 8) | 200 OK [http://0.0.0.0/qantas_supporters/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#2 (for 127.0.0.1 at 2010-07-05 16:56:21) [POST]
+  Parameters: {"x"=>"102", "y"=>"37", "authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 2. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 16:57:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 27ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/qantas_supporters/2]
+  [4;35;1mSQL (10.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#2 (for 127.0.0.1 at 2010-07-05 16:57:05) [POST]
+  Parameters: {"x"=>"170", "y"=>"28", "authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 2. Actions: show and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 16:57:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 20ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/qantas_supporters/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#2 (for 127.0.0.1 at 2010-07-05 16:57:34) [POST]
+  Parameters: {"x"=>"179", "y"=>"37", "authenticity_token"=>"zhLq6wOJT8D9Dvk34ilYU8wRfdVO6mtI90ov+IHLLLk="}
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, show, and update):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:00:24) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (5.4ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering qantas_supporters/show
+
+ActionView::TemplateError (undefined method `supporter_path' for #<ActionView::Base:0xb6624e34>) on line #18 of app/views/qantas_supporters/show.html.erb:
+15: <!--<% end %>-->
+16: 
+17: 
+18: <% form_for(@qantas_supporter) do |f| %>
+19:   <%= f.error_messages %>
+20: 
+21:   <p>
+
+    app/views/qantas_supporters/show.html.erb:18
+    app/controllers/qantas_supporters_controller.rb:11:in `show'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (4.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (14.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:09:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+
+NoMethodError (undefined method `call' for nil:NilClass):
+  app/controllers/qantas_supporters_controller.rb:11:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.3ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 13ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.3ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:10:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.4ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (6.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 15) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.3ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 21ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 17ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 20ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 17ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 17ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 18ms (DB: 3) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 21ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.5ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.3ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (1.0ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 15ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 13ms (DB: 1) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.2ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 16ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (0.1ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 17ms (DB: 2) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QantasSupportersController#show (for 127.0.0.1 at 2010-07-05 17:11:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSupporter Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `supporters`[0m
+  [4;36;1mSupporter Load (5.5ms)[0m   [0;1mSELECT * FROM `supporters` WHERE (`supporters`.`id` = 1) [0m
+Redirected to http://0.0.0.0:3000/qantas_supporters/1
+Completed in 19ms (DB: 6) | 302 Found [http://0.0.0.0/qantas_supporters/1]
+  [4;36;1mSQL (112.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (35.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:22:42) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (15.5ms)
+Rendered layouts/_social (9.3ms)
+Completed in 163ms (View: 156, DB: 148) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FactsController#index (for 127.0.0.1 at 2010-07-08 20:28:39) [GET]
+  [4;36;1mFact Load (387.7ms)[0m   [0;1mSELECT * FROM `facts` [0m
+Rendering template within layouts/application
+Rendering facts/index
+Rendered facts/_youtube (4.9ms)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.2ms)
+Completed in 522ms (View: 90, DB: 388) | 200 OK [http://0.0.0.0/facts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TheplanController#index (for 127.0.0.1 at 2010-07-08 20:30:30) [GET]
+Rendering template within layouts/application
+Rendering theplan/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.2ms)
+Completed in 33ms (View: 28, DB: 0) | 200 OK [http://0.0.0.0/theplan]
+  [4;35;1mSQL (4.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 20:30:31) [GET]
+  [4;35;1mWhattobuy Load (28.0ms)[0m   [0mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.2ms)
+Completed in 56ms (View: 19, DB: 48) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:34:52) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (11.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:35:34) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 14ms (View: 8, DB: 12) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:35:56) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:45:10) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-08 20:45:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/orang-img.png.png" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:45:29) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FactsController#index (for 127.0.0.1 at 2010-07-08 20:46:07) [GET]
+  [4;36;1mFact Load (0.3ms)[0m   [0;1mSELECT * FROM `facts` [0m
+Rendering template within layouts/application
+Rendering facts/index
+Rendered facts/_youtube (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 62ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/facts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TheplanController#index (for 127.0.0.1 at 2010-07-08 20:46:09) [GET]
+Rendering template within layouts/application
+Rendering theplan/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/theplan]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 20:46:11) [GET]
+  [4;35;1mWhattobuy Load (0.1ms)[0m   [0mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:46:13) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:48:02) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:49:29) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.1ms)
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:49:57) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 40ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:50:21) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:51:11) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.1ms)
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:51:22) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 15ms (View: 10, DB: 3) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:53:19) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/media]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 20:55:12) [GET]
+  [4;36;1mWhattobuy Load (0.1ms)[0m   [0;1mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.1ms)
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FactsController#index (for 127.0.0.1 at 2010-07-08 20:55:15) [GET]
+  [4;35;1mFact Load (0.1ms)[0m   [0mSELECT * FROM `facts` [0m
+Rendering template within layouts/application
+Rendering facts/index
+Rendered facts/_youtube (0.2ms)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.1ms)
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/facts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 20:55:39) [GET]
+  [4;36;1mWhattobuy Load (0.2ms)[0m   [0;1mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:55:42) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:56:17) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.2ms)
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:56:31) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_social (0.1ms)
+Completed in 29ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 20:56:40) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 21:00:54) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 21:02:01) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/media]
+  [4;35;1mSQL (13.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2010-07-08 21:09:10) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 9ms (View: 3, DB: 14) | 200 OK [http://0.0.0.0/media]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 21:18:42) [GET]
+  [4;35;1mWhattobuy Load (0.1ms)[0m   [0mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 60ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;36;1mSQL (5.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 21:35:40) [GET]
+  [4;36;1mWhattobuy Load (0.4ms)[0m   [0;1mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 17ms (View: 9, DB: 8) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 21:36:16) [GET]
+  [4;35;1mWhattobuy Load (0.1ms)[0m   [0mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 21:37:08) [GET]
+  [4;36;1mWhattobuy Load (0.1ms)[0m   [0;1mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 21:37:40) [GET]
+  [4;35;1mWhattobuy Load (0.2ms)[0m   [0mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 21:40:51) [GET]
+  [4;36;1mWhattobuy Load (0.2ms)[0m   [0;1mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 19ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 21:40:59) [GET]
+  [4;35;1mWhattobuy Load (0.1ms)[0m   [0mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 21:41:03) [GET]
+  [4;36;1mWhattobuy Load (0.1ms)[0m   [0;1mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 21:41:09) [GET]
+  [4;35;1mWhattobuy Load (0.1ms)[0m   [0mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2010-07-08 21:41:14) [GET]
+  [4;36;1mWhattobuy Load (0.1ms)[0m   [0;1mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/whattobuy]

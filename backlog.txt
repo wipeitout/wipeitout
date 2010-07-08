@@ -1,0 +1,16 @@
+finish media
+
+finish what to buy
+
+mail to supporter
+
+supporter => supporter_emails => emails
+
+
+mail to qantas
+
+
+
+supporter qantas sign up page
+
+unsubscribe - could just be an email

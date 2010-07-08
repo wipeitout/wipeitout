@@ -1,18 +1,18 @@
-<h1>Listing unsubscribes</h1>
-
-<table>
-  <tr>
-  </tr>
-
-<% @unsubscribes.each do |unsubscribe| %>
-  <tr>
-    <td><%= link_to 'Show', unsubscribe %></td>
-    <td><%= link_to 'Edit', edit_unsubscribe_path(unsubscribe) %></td>
-    <td><%= link_to 'Destroy', unsubscribe, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New unsubscribe', new_unsubscribe_path %>
+<div id="no_heading_text">
+  <p>
+  Hey, sorry to lose you from Wipe It Out! We understand that sometimes you can get sick and tired of emails clogging up
+  you mailbox.
+  </p>
+  <p>
+    Thanks for you support and remember to tell your family and friends about Wipe It Out!
+  </p>
+  <p>
+    If you decide you want to be kept up to date with Wipe It Out, just sign up as a supporter again on the main page.
+  </p>
+  <p>
+    Regards.
+  </p>
+  <p>
+    The Wipe It Out team.
+  </p>
+</div>
