@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <title>Wipe It Out!</title>
+  <%= stylesheet_link_tag 'application' %>
+  <%= javascript_include_tag 'jquery', 'jquery.validate', 'application' %>
+  <%= yield(:head) %>
+</head>
+
+<body>
+
+<div id="main">
+
+  <div class="centre">
+    <div id="navigation">
+      <ul>
+        <li class="list_padding"/>
+        <li><a href="./home">What is Wipe It Out!</a></li>
+        <li><a href="./facts">Q and A</a></li>
+        <li><a href="./theplan">The Plan</a></li>
+        <li><a href="./whattobuy">What to Buy</a></li>
+        <li><a href="./media">Media</a></li>
+        <li><a href="./partners">Partners</a></li>
+        <li><a href="http://www.facebook.com/group.php?gid=194339370126" target="_blank"><img class="header_img" src="/images/FacebookIcon.png" border="0" alt="fb"></a><a href="http://twitter.com/wipeitoutoz" target="_blank"><img class="header_img" src="/images/TwitterIcon.png" border="0" alt="tw"></a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <%= yield %>
+    </div>
+  </div>
+
+  <div id="footer">
+    <%= render :partial => 'layouts/footer' %>
+  </div>
+  <div id="social">
+    <%= render :partial => 'layouts/social' %>
+  </div>
+</div>
+
+<!-- Start Google Analytics Tag-->
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-10572341-1");
+        pageTracker._trackPageview();
+    } catch(err) {
+    }
+</script>
+<!-- End Google Analytics Tag-->
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+# Logfile created on Thu Jul 08 05:07:59 -0700 2010  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-02-21 15:34:49) [GET]
+  [4;35;1mSupporter Load (1.9ms)[0m   [0mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (1.7ms)
+Rendered home/_supporter (22.8ms)
+Rendered layouts/_footer (0.7ms)
+Rendered layouts/_social (0.7ms)
+Completed in 70ms (View: 52, DB: 2) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MediaController#index (for 127.0.0.1 at 2011-02-21 15:34:59) [GET]
+Rendering template within layouts/application
+Rendering media/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/media]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartnersController#index (for 127.0.0.1 at 2011-02-21 15:35:04) [GET]
+  [4;36;1mPartner Load (0.5ms)[0m   [0;1mSELECT * FROM `partners` [0m
+Rendering template within layouts/application
+Rendering partners/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 12ms (View: 8, DB: 1) | 200 OK [http://localhost/partners]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WhattobuyController#index (for 127.0.0.1 at 2011-02-21 15:35:05) [GET]
+  [4;36;1mWhattobuy Load (0.6ms)[0m   [0;1mSELECT * FROM `whattobuys` [0m
+Rendering template within layouts/application
+Rendering whattobuy/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.0ms)
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/whattobuy]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TheplanController#index (for 127.0.0.1 at 2011-02-21 15:35:06) [GET]
+Rendering template within layouts/application
+Rendering theplan/index
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/theplan]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FactsController#index (for 127.0.0.1 at 2011-02-21 15:35:10) [GET]
+  [4;35;1mFact Load (0.8ms)[0m   [0mSELECT * FROM `facts` [0m
+Rendering template within layouts/application
+Rendering facts/index
+Rendered facts/_youtube (1.5ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.0ms)
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/facts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-02-21 15:35:11) [GET]
+  [4;35;1mSupporter Load (2.5ms)[0m   [0mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (0.1ms)
+Rendered home/_supporter (5.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_social (0.1ms)
+Completed in 23ms (View: 9, DB: 3) | 200 OK [http://localhost/home]

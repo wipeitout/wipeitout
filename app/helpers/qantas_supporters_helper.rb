@@ -1,0 +1,2 @@
+module QantasSupportersHelper
+end

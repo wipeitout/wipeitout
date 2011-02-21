@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+  <link rel="stylesheet" href="http://wipeitout.com.au/stylesheets/application.css">
+</head>
+<body>
+<p>Good news and bad.... this is being sent from the auto mailer - so you'll get one for all me test users.</p>
+
+<p>Good: the mailer is working</p>
+
+<p>Bad: i'm not completely confident in releasing this into product without further testing, so the new copy has to
+  wait</p>
+
+<p>To do: complete the media section, decide on email styling, add petition page for users to send email to qantas,
+  decide where the facebook an twitter logos should be placed, add privacy page and add the ability for users to opt-out
+  of future mailouts</p>
+
+
+<p>
+  Hi <%= h @supporter.name %>
+</p>
+
+<p>
+  Thanks for supporting <a href="http://wipeitout.com.au" target="_blank">Wipe It Out</a>, the cheeky, non-profit
+  campaign designed to wipe out the use of non-recycled toilet paper in Australia by 2014.
+</p>
+
+<h2>A New Bottom Line For Aussie Brands</h2>
+
+<p>
+  In the next step of our campaign, we’re talking to Australia’s biggest brands, one at a time, to ask them to use
+  non-recycled toilet paper in their operations and management.
+</p>
+
+<p>
+  Aussie brands are recognising there’s a new bottom line in play: not only their economic returns, but their
+  environmental and social responsibilities.
+</p>
+
+<h2>What Can I Do?</h2>
+
+<p>
+  We invite you to
+  support
+  <a target="_blank" href=<%= url_for(:host => "0.0.0.0:3000", :controller => "qantas_supporters", :action => "index", :id => @supporter.id) %>>our
+    new petition</a>, directed to our first Aussie brand off the rank, Qantas, where we ask chief executive Alan Joyce
+  to
+  wipe out the company’s use of non-recycled toilet paper onboard its airlines and across its operations.
+</p>
+
+<p>
+  This is a friendly approach to Qantas in line with our anti-boycott spirit: we’re collaborating with Aussie brands to
+  do the right thing, rather than blacklisting them. We believe a positive incentive is the best one.
+</p>
+
+<h2>2 Tips</h2>
+
+<p>
+  Did you know that:
+
+<p>
+<ul>
+  <li>A whopping 95 per cent of Australians buy non-recycled toilet paper?</li>
+  <li>Today, about 270,000 trees will be cut down for toilet paper alone around the world? That’s roughly about 200
+    trees a minute, or 98 million trees a year.
+  </li>
+</ul>
+
+<p>
+  Yet every time we produce a tonne of recycled toilet paper instead, we can save 31,000 litres of water and 400
+  kilograms of greenhouse gases.
+</p>
+
+<p>
+  It’s up to everybody – corporate body, government body and individuals – to step up to the plate.
+</p>
+
+<p>
+  <a target="_blank" href=<%= url_for(:host => "0.0.0.0:3000", :controller => "qantas_supporters", :action => "index", :id => @supporter.id) %>>Sign
+    our petition to Qantas today</a>.
+</p>
+
+<p>
+  And thanks for buying recycled.
+</p>
+
+Best regards,
+<br>
+Aaron Fuller
+<br>
+Recycled-Toilet-Paper Addict
+<br>
+Wipe It Out
+<br>
+<br>
+Please check out our privacy statement at <a href="http://wipeitout.com.au/privacy">http://wipeitout.com.au/privacy</a>
+<br>
+<br>
+Click to
+<a target="_blank" href=<%= url_for(:host => "0.0.0.0:3000", :controller => "unsubscribe", :action => "index", :id => @supporter.id) %>>unsubscribe</a>
+if you would like to stop receiving emails from
+Wipe It Out.
+</body>
+</html>

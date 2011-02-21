@@ -1,0 +1,82 @@
+<div id="moogaloop" style="width: 504px; height: 340px;"></div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<script type="text/javascript">
+    var video_id = 7408457;
+    var moogaloop = false;
+
+    function vimeo_player_loaded(swf_id) {
+        moogaloop = document.getElementById(swf_id);
+        document.getElementById('controls').style.display = '';
+
+        moogaloop.api_addEventListener('onProgress', 'vimeo_on_progress');
+        moogaloop.api_addEventListener('onLoading', 'vimeo_on_loading');
+        moogaloop.api_addEventListener('onFinish', 'vimeo_on_finish');
+        moogaloop.api_addEventListener('onPlay', 'vimeo_on_play');
+        moogaloop.api_addEventListener('onPause', 'vimeo_on_pause');
+        moogaloop.api_addEventListener('onSeek', 'vimeo_on_seek');
+
+        document.getElementById('vimeo_duration').innerHTML = moogaloop.api_getDuration();
+    }
+
+    function vimeo_on_play(swf_id) {
+        document.getElementById('state').innerHTML = 'Playing';
+    }
+
+    function vimeo_on_pause(swf_id) {
+        document.getElementById('state').innerHTML = 'Paused';
+    }
+
+    function vimeo_on_seek(time, swf_id) {
+        document.getElementById('state').innerHTML = 'Seeking to ' + time;
+    }
+
+    function vimeo_on_progress(time, swf_id) {
+        document.getElementById('vimeo_cur_time').innerHTML = time + 's';
+    }
+
+    function vimeo_on_loading(data, swf_id) {
+        document.getElementById('vimeo_bytes_loaded').innerHTML = data.bytesLoaded;
+        document.getElementById('vimeo_bytes_total').innerHTML = data.bytesTotal;
+        document.getElementById('vimeo_decimal_loaded').innerHTML = data.decimal;
+        document.getElementById('vimeo_percent_loaded').innerHTML = data.percent + '%';
+    }
+
+    function vimeo_on_finish(moogaloop) {
+        moogaloop.api_seekTo(20);
+        window.alert("Finishing vimeo");
+        //document.getElementById('state').innerHTML = 'Finished';
+    }
+
+    function toggle_loop(el) {
+        if (el.value == 'Loop is off') {
+            el.value = 'Loop is on';
+            moogaloop.api_setLoop(true);
+        }
+        else {
+            el.value = 'Loop is off';
+            moogaloop.api_setLoop(false);
+        }
+    }
+
+    // Run the javascript when the page is ready
+    var swf_id = 'moogaloop';
+
+    var flashvars = {
+        clip_id: video_id,
+        show_portrait: 0,
+        show_byline: 0,
+        show_title: 1,
+        js_api: 1, // required in order to use the Javascript API
+        js_onLoad: 'vimeo_player_loaded', // moogaloop will call this JS function when it's done loading (optional)
+        js_swf_id: 'moogaloop' // this will be passed into all event methods so you can keep track of multiple moogaloops (optional)
+    };
+    var params = {
+        allowscriptaccess: 'always',
+        allowfullscreen: 'true'
+    };
+    var attributes = {};
+
+    // For more SWFObject documentation visit: http://code.google.com/p/swfobject/wiki/documentation
+    swfobject.embedSWF("http://vimeo.com/moogaloop.swf", swf_id, "504", "360", "9.0.0", "expressInstall.swf", flashvars, params, attributes);
+</script>
