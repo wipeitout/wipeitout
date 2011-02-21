@@ -71,3 +71,15 @@ Rendered home/_supporter (5.3ms)
 Rendered layouts/_footer (0.1ms)
 Rendered layouts/_social (0.1ms)
 Completed in 23ms (View: 9, DB: 3) | 200 OK [http://localhost/home]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-02-21 17:08:14) [GET]
+  [4;35;1mSupporter Load (1.7ms)[0m   [0mSELECT * FROM `supporters` [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_vimeo (1.0ms)
+Rendered home/_supporter (15.9ms)
+Rendered layouts/_footer (42.1ms)
+Rendered layouts/_social (0.2ms)
+Completed in 98ms (View: 81, DB: 2) | 200 OK [http://localhost/]
